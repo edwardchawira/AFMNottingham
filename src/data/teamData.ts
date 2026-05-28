@@ -42,6 +42,13 @@ const teamData: TeamMember[] = [
     role: 'Youth Secretary',
     bio: 'Nyasha serves as Youth Secretary, helping coordinate youth ministry communication, planning, and support for young people in the church.',
     image: '/team/nyasha-bonde.png',
+  },
+  {
+    id: '7',
+    name: 'Mr Sigauke',
+    role: 'Praise & Worship Leader',
+    bio: 'Mr Sigauke leads the praise and worship ministry, helping guide the congregation in worship through music and song.',
+    image: '/afm-logo.png',
   }
 ];
 
