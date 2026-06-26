@@ -40,10 +40,10 @@ const Header: React.FC = () => {
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
-          <Link to="/" className="flex items-center" aria-label="AFM Church Nottingham">
+          <Link to="/" className="flex items-center" aria-label="Nottingham Revival Centre">
             <img 
               src="/afm-logo.png" 
-              alt="AFM Church Nottingham Logo" 
+              alt="Nottingham Revival Centre Logo" 
               className="h-12 mr-3 transition-all duration-300" 
             />
             <div className="text-primary-900 transition-all duration-300">

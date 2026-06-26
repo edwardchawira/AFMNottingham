@@ -18,8 +18,8 @@ const Home: React.FC = () => {
     <div>
       {/* Hero Section */}
       <Hero
-        title="Empowered to Impact Nottingham"
-        subtitle="Welcome to AFM Church Nottingham - a place of worship, community, and transformation."
+        title="Nottingham Revival Centre"
+        subtitle="A multi-racial, Holy Spirit-driven church family serving Nottingham with the love and message of Jesus Christ."
         backgroundImage="/hero-empowered-impact.jpg"
         buttons={{
           primary: {
@@ -41,7 +41,7 @@ const Home: React.FC = () => {
             <div className="md:w-1/2 mb-10 md:mb-0 md:pr-12">
               <img
                 src="/welcome-church-family.jpg"
-                alt="Welcome to AFM Church"
+                alt="Welcome to Nottingham Revival Centre"
                 className="h-80 w-full rounded-lg object-cover object-center shadow-lg md:h-[420px]"
               />
             </div>
@@ -49,10 +49,10 @@ const Home: React.FC = () => {
               <h2 className="font-heading font-bold text-3xl md:text-4xl text-primary-900 mb-6">Welcome to Our Church Family</h2>
               <div className="h-1 w-20 bg-accent-500 mb-6"></div>
               <p className="text-primary-700 mb-8">
-                At AFM Church Nottingham, we believe in the power of community and the transformative message of Jesus Christ. We're a diverse family of believers committed to making a positive impact in our city and beyond. Whether you're exploring faith for the first time or looking for a church home, you'll find a warm welcome here.
+                Nottingham Revival Centre is a loving and caring body of ambassadors for Christ. We are committed to racial understanding, Spirit-led worship, biblical teaching, prayer, counselling, and practical service that responds to the needs of our community.
               </p>
               <p className="text-primary-700 mb-8">
-                Our services combine contemporary worship, relevant teaching, and a friendly atmosphere where people of all backgrounds can encounter God's love and grow in their faith journey.
+                We exist to participate in community transformation through preaching, teaching, counselling, and ministries that help people encounter God's love, grow in faith, and serve Nottingham with compassion and dignity.
               </p>
               <Button variant="primary" href="/about" size="lg">
                 Learn More About Us
@@ -62,8 +62,48 @@ const Home: React.FC = () => {
         </div>
       </section>
 
+      {/* Vision Highlights */}
+      <section className="py-20 bg-primary-50">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <SectionHeading
+            title="Our Vision in Action"
+            subtitle="The values that shape our life together and our service to Nottingham"
+          />
+
+          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-5">
+            {[
+              {
+                title: 'Multi-racial',
+                text: 'We encourage understanding, respect, love, and equality among people of every race and background.',
+              },
+              {
+                title: 'Holy Spirit Driven',
+                text: 'We rely on the Holy Spirit to empower believers and equip the church with gifts for ministry.',
+              },
+              {
+                title: 'Loving and Caring',
+                text: 'We seek to love and care for children, youth, adults, families, and our wider community as Christ loves us.',
+              },
+              {
+                title: 'Ambassadors',
+                text: 'We represent God\'s kingdom in everyday life, bringing kingdom values into our community.',
+              },
+              {
+                title: 'Community Sensitive',
+                text: 'We identify local needs and offer support through ministries, community projects, and practical care.',
+              },
+            ].map((value) => (
+              <div key={value.title} className="rounded-lg bg-white p-6 shadow-md">
+                <h3 className="font-heading text-lg font-semibold text-primary-900">{value.title}</h3>
+                <p className="mt-3 text-sm leading-6 text-primary-700">{value.text}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Service Times Section */}
-      <section className="py-16 bg-primary-50">
+      <section className="py-16 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <SectionHeading 
             title="Join Us This Week" 

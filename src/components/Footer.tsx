@@ -34,14 +34,14 @@ const Footer: React.FC = () => {
           <div className="space-y-4">
             <Link to="/" className="inline-block">
               <div className="flex items-center">
-                <img src="/afm-logo.png" alt="AFM Church Nottingham Logo" className="h-12 mr-3" />
+                <img src="/afm-logo.png" alt="Nottingham Revival Centre Logo" className="h-12 mr-3" />
                 <div>
                   <div className="font-heading font-bold text-lg">AFM Church</div>
                   <div className="text-xs -mt-1">Nottingham Revival Centre</div>
                 </div>
               </div>
             </Link>
-            <p className="text-silver-300 mt-4">Empowered to Impact Nottingham through the message of God's love and grace.</p>
+            <p className="text-silver-300 mt-4">A multi-racial, Holy Spirit-driven church family serving Nottingham with love, care, and the message of Christ.</p>
             
             <div className="flex space-x-4 mt-6">
               <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="text-silver-400 hover:text-highlight-500 transition-colors">
@@ -143,7 +143,7 @@ const Footer: React.FC = () => {
       <div className="border-t border-primary-800 py-6">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-silver-400 text-sm">© {new Date().getFullYear()} AFM Church Nottingham. All rights reserved.</p>
+            <p className="text-silver-400 text-sm">© {new Date().getFullYear()} Nottingham Revival Centre. All rights reserved.</p>
             <div className="flex space-x-4 mt-4 md:mt-0">
               <Link to="/privacy-policy" className="text-silver-400 hover:text-highlight-500 transition-colors text-sm">
                 Privacy Policy
